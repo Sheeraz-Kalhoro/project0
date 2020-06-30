@@ -1,19 +1,36 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
-header {
+.header {
+    /* width: 100%; */
     background: #3a5;
     padding: 20px;
     color: white;
 }
 
 main {
-    background: gray;
+    display: grid;
+    /* width: 100%; */
+    grid-template-columns: repeat(12, 1fr);
+    padding: 10px;
+    color: white;
+    background: rgb(82, 82, 82);
+
 }
 
-footer {
+main p {
+    grid-column: 1/5;
+}
+
+.footer {
     color: white;
     background: black;
+    line-height: 40px;
+    padding: 10px;
+    /* position: absolute; */
+    width: 100vw;
+    /* bottom: 0; */
 }
